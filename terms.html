@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions — SV eCAF | SV Infonet Solution Pvt. Ltd.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --navy: #0d2b55;
+        --blue: #1a56a0;
+        --sky: #3b82c4;
+        --accent: #10b981;
+        --light: #ecfdf5;
+        --text: #1e293b;
+        --muted: #64748b;
+        --border: #cbd5e1;
+        --white: #ffffff;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        background: #f8fafd;
+        color: var(--text);
+        line-height: 1.75;
+        font-size: 15px;
+      }
+
+      header {
+        background: linear-gradient(
+          135deg,
+          #0a2340 0%,
+          #0d2b55 50%,
+          #1a4080 100%
+        );
+        color: white;
+        padding: 60px 24px 48px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at 30% 80%,
+          rgba(16, 185, 129, 0.1) 0%,
+          transparent 60%
+        );
+        pointer-events: none;
+      }
+      .badge {
+        display: inline-block;
+        background: rgba(16, 185, 129, 0.2);
+        border: 1px solid rgba(16, 185, 129, 0.4);
+        color: #6ee7b7;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      header h1 {
+        font-family: "DM Serif Display", serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        letter-spacing: -0.02em;
+        margin-bottom: 10px;
+      }
+      header .subtitle {
+        font-size: 14px;
+        opacity: 0.75;
+        letter-spacing: 0.04em;
+      }
+      .meta-chips {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 24px;
+      }
+      .chip {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 12px;
+        padding: 5px 14px;
+        border-radius: 20px;
+      }
+      .chip span {
+        opacity: 0.6;
+        margin-right: 4px;
+      }
+
+      nav {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0 24px;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+      }
+      nav ul {
+        display: inline-flex;
+        gap: 0;
+        list-style: none;
+      }
+      nav a {
+        display: block;
+        padding: 14px 15px;
+        font-size: 12.5px;
+        font-weight: 500;
+        color: var(--muted);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      nav a:hover {
+        color: var(--blue);
+        border-color: var(--blue);
+      }
+
+      .container {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
+
+      .intro-box {
+        background: var(--light);
+        border-left: 4px solid var(--accent);
+        border-radius: 0 10px 10px 0;
+        padding: 20px 24px;
+        margin-bottom: 48px;
+        font-size: 14px;
+        color: #134e4a;
+      }
+      .intro-box strong {
+        color: #065f46;
+      }
+
+      .section {
+        margin-bottom: 44px;
+        animation: fadeUp 0.5s ease both;
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+      .section-num {
+        background: var(--navy);
+        color: white;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 600;
+        flex-shrink: 0;
+      }
+      .section-header h2 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.25rem;
+        color: var(--navy);
+        letter-spacing: -0.01em;
+      }
+
+      p {
+        margin-bottom: 14px;
+        color: #334155;
+        font-size: 15px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 14px;
+      }
+      ul li {
+        padding: 8px 0 8px 28px;
+        position: relative;
+        color: #334155;
+        border-bottom: 1px solid #f1f5f9;
+        font-size: 14.5px;
+      }
+      ul li:last-child {
+        border-bottom: none;
+      }
+      ul li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .highlight-box {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-top: 3px solid var(--accent);
+        border-radius: 0 0 10px 10px;
+        padding: 18px 22px;
+        margin: 16px 0;
+        font-size: 14px;
+        color: #334155;
+      }
+
+      .warn-box {
+        background: #fff7ed;
+        border: 1px solid #fed7aa;
+        border-left: 4px solid #f59e0b;
+        border-radius: 0 8px 8px 0;
+        padding: 16px 20px;
+        margin: 16px 0;
+        font-size: 14px;
+        color: #92400e;
+      }
+      .warn-box strong {
+        color: #78350f;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .contact-card {
+        background: linear-gradient(135deg, var(--navy), #1a4490);
+        color: white;
+        border-radius: 14px;
+        padding: 32px;
+        margin-top: 16px;
+      }
+      .contact-card h3 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+      }
+      .contact-item {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 14px;
+      }
+      .contact-item:last-child {
+        border: none;
+      }
+      .contact-item .label {
+        opacity: 0.6;
+        min-width: 80px;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .contact-item a {
+        color: #6ee7b7;
+        text-decoration: none;
+      }
+
+      footer {
+        background: var(--navy);
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        padding: 32px 24px;
+        font-size: 12.5px;
+      }
+      footer a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+      }
+
+      .back-top {
+        display: inline-block;
+        margin-top: 40px;
+        background: var(--blue);
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 10px 22px;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .back-top:hover {
+        background: var(--navy);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="badge">Legal Document</div>
+      <h1>Terms &amp; Conditions</h1>
+      <p class="subtitle">
+        SV eCAF Application &nbsp;·&nbsp; SV Infonet Solution Private Limited
+      </p>
+      <div class="meta-chips">
+        <div class="chip"><span>Effective:</span> April 22, 2026</div>
+        <div class="chip"><span>App:</span> com.svinfonet.ecaf</div>
+        <div class="chip"><span>Governing Law:</span> India</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#s1">Acceptance</a></li>
+        <li><a href="#s2">Eligibility</a></li>
+        <li><a href="#s3">Functionality</a></li>
+        <li><a href="#s4">Obligations</a></li>
+        <li><a href="#s5">IP Rights</a></li>
+        <li><a href="#s6">Privacy</a></li>
+        <li><a href="#s7">Disclaimers</a></li>
+        <li><a href="#s8">Liability</a></li>
+        <li><a href="#s9">Termination</a></li>
+        <li><a href="#s10">Governing Law</a></li>
+        <li><a href="#s11">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="intro-box">
+        <strong>Important:</strong> These Terms govern your use of the SV eCAF
+        app. By logging in and using the app, you confirm you are an authorised
+        SV Infonet field sales agent and agree to be bound by these Terms.
+        Please read carefully before use.
+      </div>
+
+      <!-- 1 -->
+      <div class="section" id="s1">
+        <div class="section-header">
+          <div class="section-num">1</div>
+          <h2>Acceptance of Terms</h2>
+        </div>
+        <p>
+          By downloading, installing, or using the SV eCAF application
+          ("<strong>App</strong>"), you ("<strong>User</strong>" or
+          "<strong>Agent</strong>") agree to be bound by these Terms and
+          Conditions ("<strong>Terms</strong>"). These Terms constitute a
+          binding agreement between you and
+          <strong>SV Infonet Solution Private Limited</strong>
+          ("<strong>Company</strong>").
+        </p>
+        <div class="warn-box">
+          <strong
+            >⚠️ Do not use the App if you do not agree to these Terms.</strong
+          >
+          If you do not agree, please discontinue use immediately and contact
+          your supervisor to surrender your access credentials.
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="section" id="s2">
+        <div class="section-header">
+          <div class="section-num">2</div>
+          <h2>Eligibility & Authorised Use</h2>
+        </div>
+        <ul>
+          <li>
+            The App is exclusively available to
+            <strong>authorised field sales agents</strong> of SV Infonet
+            Solution Private Limited
+          </li>
+          <li>
+            You must be at least <strong>18 years of age</strong> to use this
+            App
+          </li>
+          <li>
+            Access requires valid
+            <strong>company-issued login credentials</strong> — sharing
+            credentials is strictly prohibited
+          </li>
+          <li>
+            The App is for <strong>official business use only</strong> — any
+            personal or unauthorised use is prohibited
+          </li>
+          <li>
+            You must not use the App from any device that is not authorised or
+            approved by the Company
+          </li>
+        </ul>
+      </div>
+
+      <!-- 3 -->
+      <div class="section" id="s3">
+        <div class="section-header">
+          <div class="section-num">3</div>
+          <h2>App Functionality</h2>
+        </div>
+        <p>
+          The App enables authorised agents to perform the following official
+          Company functions:
+        </p>
+        <ul>
+          <li>Complete digital Customer Application Forms (CAF)</li>
+          <li>
+            Capture customer signatures digitally on behalf of the Company
+          </li>
+          <li>Photograph customer identity and address proof documents</li>
+          <li>Generate PDF versions of completed forms</li>
+          <li>
+            Submit forms to the Company's internal backend system (Supabase)
+          </li>
+        </ul>
+        <div class="highlight-box">
+          Agents must use these features solely for official Company business.
+          Any use of the App to collect personal customer data for purposes
+          outside of Company business is strictly prohibited and may constitute
+          a criminal offence under applicable data protection laws.
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="section" id="s4">
+        <div class="section-header">
+          <div class="section-num">4</div>
+          <h2>User Obligations</h2>
+        </div>
+        <p>As a User of the App, you agree to:</p>
+        <ul>
+          <li>
+            Provide <strong>accurate and complete information</strong> when
+            filling CAF forms
+          </li>
+          <li>
+            Obtain appropriate <strong>customer consent</strong> before
+            capturing signatures or photographs
+          </li>
+          <li>
+            Keep login credentials <strong>strictly confidential</strong> and
+            notify the Company immediately upon suspected unauthorised access
+          </li>
+          <li>
+            <strong>Not reverse-engineer</strong>, decompile, or attempt to
+            extract the source code of the App
+          </li>
+          <li>
+            Not use the App for any <strong>unlawful purpose</strong> or in
+            violation of applicable regulations
+          </li>
+          <li>
+            Comply with all applicable
+            <strong>data protection laws</strong> when handling customer data
+          </li>
+          <li>
+            Report any App bugs, security vulnerabilities, or data issues to the
+            Company promptly
+          </li>
+        </ul>
+      </div>
+
+      <!-- 5 -->
+      <div class="section" id="s5">
+        <div class="section-header">
+          <div class="section-num">5</div>
+          <h2>Intellectual Property</h2>
+        </div>
+        <p>
+          All intellectual property rights in the App, including but not limited
+          to software, design, logos, trademarks, and content, are owned by or
+          licensed to <strong>SV Infonet Solution Private Limited</strong>.
+        </p>
+        <p>
+          No licence or right is granted to use any Company intellectual
+          property except as expressly provided in these Terms. You may not
+          copy, reproduce, distribute, or create derivative works from the App
+          or any part thereof without prior written consent from the Company.
+        </p>
+      </div>
+
+      <!-- 6 -->
+      <div class="section" id="s6">
+        <div class="section-header">
+          <div class="section-num">6</div>
+          <h2>Data & Privacy</h2>
+        </div>
+        <p>
+          Your use of the App is subject to our
+          <a href="privacy-policy.html" style="color: var(--blue)"
+            >Privacy Policy</a
+          >, which is incorporated into these Terms by reference. By using the
+          App, you consent to the collection and use of information as described
+          in the Privacy Policy.
+        </p>
+        <p>
+          You acknowledge that customer data collected through the App is the
+          exclusive property of SV Infonet Solution Private Limited and must not
+          be extracted, copied, or used outside the App for any purpose.
+        </p>
+      </div>
+
+      <!-- 7 -->
+      <div class="section" id="s7">
+        <div class="section-header">
+          <div class="section-num">7</div>
+          <h2>Disclaimer of Warranties</h2>
+        </div>
+        <p>
+          The App is provided <strong>"as is"</strong> and
+          <strong>"as available"</strong> without warranties of any kind,
+          express or implied, including but not limited to implied warranties of
+          merchantability, fitness for a particular purpose, or
+          non-infringement.
+        </p>
+        <p>
+          The Company does not warrant that the App will be uninterrupted,
+          error-free, or free from viruses or other harmful components. Use of
+          the App is at your sole risk.
+        </p>
+      </div>
+
+      <!-- 8 -->
+      <div class="section" id="s8">
+        <div class="section-header">
+          <div class="section-num">8</div>
+          <h2>Limitation of Liability</h2>
+        </div>
+        <p>
+          To the maximum extent permitted by applicable law,
+          <strong
+            >SV Infonet Solution Private Limited shall not be liable</strong
+          >
+          for any indirect, incidental, special, exemplary, or consequential
+          damages arising from your use of, or inability to use, the App —
+          including but not limited to loss of data, business interruption, or
+          loss of profits.
+        </p>
+        <p>
+          The Company's total aggregate liability to you shall not exceed the
+          amount paid by you (if any) for using the App in the twelve months
+          preceding the claim.
+        </p>
+      </div>
+
+      <!-- 9 -->
+      <div class="section" id="s9">
+        <div class="section-header">
+          <div class="section-num">9</div>
+          <h2>Termination</h2>
+        </div>
+        <p>
+          The Company reserves the right to
+          <strong>suspend or terminate</strong> your access to the App at any
+          time, with or without notice, for:
+        </p>
+        <ul>
+          <li>Violation of these Terms</li>
+          <li>Cessation of employment or engagement with the Company</li>
+          <li>
+            Any conduct deemed harmful to the Company, its customers, or its
+            systems
+          </li>
+          <li>Any other reason at the Company's sole discretion</li>
+        </ul>
+        <p>
+          Upon termination, you must <strong>cease all use</strong> of the App
+          and delete it from your device immediately.
+        </p>
+      </div>
+
+      <!-- 10 -->
+      <div class="section" id="s10">
+        <div class="section-header">
+          <div class="section-num">10</div>
+          <h2>Governing Law & Amendments</h2>
+        </div>
+        <p>
+          These Terms shall be governed by and construed in accordance with the
+          <strong>laws of India</strong>. Any disputes arising under these Terms
+          shall be subject to the exclusive jurisdiction of the courts located
+          in <strong>Daman, Dadra and Nagar Haveli and Daman and Diu</strong>,
+          India.
+        </p>
+        <p>
+          The Company reserves the right to modify these Terms at any time.
+          Updated Terms will be communicated through the App or official Company
+          channels. Continued use of the App after changes take effect
+          constitutes acceptance of the revised Terms.
+        </p>
+      </div>
+
+      <!-- 11 -->
+      <div class="section" id="s11">
+        <div class="section-header">
+          <div class="section-num">11</div>
+          <h2>Contact Us</h2>
+        </div>
+        <p>For any questions about these Terms, please contact:</p>
+        <div class="contact-card">
+          <h3>SV Infonet Solution Private Limited</h3>
+          <div class="contact-item">
+            <span class="label">Email</span>
+            <a href="mailto:svinfonetsolution2023@gmail.com"
+              >svinfonetsolution2023@gmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="label">Phone</span>
+            <a href="tel:+918511895559">+91 85118 95559 / +91 85117 95559</a>
+          </div>
+          <div class="contact-item">
+            <span class="label">Website</span>
+            <a href="https://svinfonetsolution.in">svinfonetsolution.in</a>
+          </div>
+          <div class="contact-item">
+            <span class="label">Address</span>
+            <span
+              >SV Infonet Solution Private Limited, First Floor, House No 139,
+              Devka Wadifaliya Bhandarwad, Near Laxmi Mata Temple, Nani Daman,
+              Daman, Dadra And Nagar Haveli And Daman And Diu - 396210</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 24px">
+        <a
+          href="privacy-policy.html"
+          style="
+            color: var(--blue);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid;
+          "
+          >← View Privacy Policy</a
+        >
+      </div>
+
+      <div style="text-align: center">
+        <a href="#" class="back-top">↑ Back to Top</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 SV Infonet Solution Private Limited. All rights reserved.</p>
+      <p style="margin-top: 6px">
+        <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </p>
+    </footer>
+  </body>
+</html>
