@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — SV eCAF | SV Infonet Solution Pvt. Ltd.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --navy: #0d2b55;
+        --blue: #1a56a0;
+        --sky: #3b82c4;
+        --accent: #f59e0b;
+        --light: #eff6ff;
+        --text: #1e293b;
+        --muted: #64748b;
+        --border: #cbd5e1;
+        --white: #ffffff;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        background: #f8fafd;
+        color: var(--text);
+        line-height: 1.75;
+        font-size: 15px;
+      }
+
+      /* ── HEADER ── */
+      header {
+        background: linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          #1a4080 60%,
+          var(--sky) 100%
+        );
+        color: white;
+        padding: 60px 24px 48px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at 70% 20%,
+          rgba(245, 158, 11, 0.12) 0%,
+          transparent 60%
+        );
+        pointer-events: none;
+      }
+      .badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(8px);
+        color: white;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      header h1 {
+        font-family: "DM Serif Display", serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        letter-spacing: -0.02em;
+        margin-bottom: 10px;
+      }
+      header .subtitle {
+        font-size: 14px;
+        opacity: 0.75;
+        letter-spacing: 0.04em;
+      }
+      .meta-chips {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 24px;
+      }
+      .chip {
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: white;
+        font-size: 12px;
+        padding: 5px 14px;
+        border-radius: 20px;
+      }
+      .chip span {
+        opacity: 0.65;
+        margin-right: 4px;
+      }
+
+      /* ── NAV ── */
+      nav {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0 24px;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+      }
+      nav ul {
+        display: inline-flex;
+        gap: 0;
+        list-style: none;
+      }
+      nav a {
+        display: block;
+        padding: 14px 16px;
+        font-size: 12.5px;
+        font-weight: 500;
+        color: var(--muted);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      nav a:hover {
+        color: var(--blue);
+        border-color: var(--blue);
+      }
+
+      /* ── LAYOUT ── */
+      .container {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
+
+      /* ── INTRO BOX ── */
+      .intro-box {
+        background: var(--light);
+        border-left: 4px solid var(--accent);
+        border-radius: 0 10px 10px 0;
+        padding: 20px 24px;
+        margin-bottom: 48px;
+        font-size: 14px;
+        color: #334155;
+      }
+      .intro-box strong {
+        color: var(--navy);
+      }
+
+      /* ── SECTION ── */
+      .section {
+        margin-bottom: 48px;
+        animation: fadeUp 0.5s ease both;
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+      .section-num {
+        background: var(--navy);
+        color: white;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 600;
+        flex-shrink: 0;
+      }
+      .section-header h2 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.25rem;
+        color: var(--navy);
+        letter-spacing: -0.01em;
+      }
+
+      p {
+        margin-bottom: 14px;
+        color: #334155;
+        font-size: 15px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 14px;
+      }
+      ul li {
+        padding: 8px 0 8px 28px;
+        position: relative;
+        color: #334155;
+        border-bottom: 1px solid #f1f5f9;
+        font-size: 14.5px;
+      }
+      ul li:last-child {
+        border-bottom: none;
+      }
+      ul li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: var(--sky);
+        font-weight: 700;
+      }
+
+      /* ── DATA TABLE ── */
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13.5px;
+        margin: 14px 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+      }
+      .data-table th {
+        background: var(--navy);
+        color: white;
+        padding: 10px 14px;
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      .data-table td {
+        padding: 10px 14px;
+        border-bottom: 1px solid #eef2f7;
+        vertical-align: top;
+      }
+      .data-table tr:last-child td {
+        border-bottom: none;
+      }
+      .data-table tr:nth-child(even) td {
+        background: var(--light);
+      }
+
+      /* ── CALLOUT ── */
+      .callout {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 18px 22px;
+        margin: 16px 0;
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+      }
+      .callout-icon {
+        font-size: 20px;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .callout-body {
+        font-size: 14px;
+        color: #334155;
+      }
+      .callout-body strong {
+        color: var(--navy);
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      /* ── CONTACT CARD ── */
+      .contact-card {
+        background: linear-gradient(135deg, var(--navy), #1a4490);
+        color: white;
+        border-radius: 14px;
+        padding: 32px;
+        margin-top: 16px;
+      }
+      .contact-card h3 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+      }
+      .contact-item {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 14px;
+      }
+      .contact-item:last-child {
+        border: none;
+      }
+      .contact-item .label {
+        opacity: 0.6;
+        min-width: 80px;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .contact-item a {
+        color: #93c5fd;
+        text-decoration: none;
+      }
+
+      /* ── FOOTER ── */
+      footer {
+        background: var(--navy);
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        padding: 32px 24px;
+        font-size: 12.5px;
+      }
+      footer a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+      }
+
+      /* ── BACK TO TOP ── */
+      .back-top {
+        display: inline-block;
+        margin-top: 40px;
+        background: var(--blue);
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 10px 22px;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .back-top:hover {
+        background: var(--navy);
+      }
+
+      @media (max-width: 600px) {
+        .data-table {
+          font-size: 12px;
+        }
+        .data-table th,
+        .data-table td {
+          padding: 8px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="badge">Legal Document</div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        SV eCAF Application &nbsp;·&nbsp; SV Infonet Solution Private Limited
+      </p>
+      <div class="meta-chips">
+        <div class="chip"><span>Effective:</span> April 22, 2026</div>
+        <div class="chip"><span>App:</span> com.svinfonet.ecaf</div>
+        <div class="chip"><span>Version:</span> 1.0.0</div>
+        <div class="chip"><span>Audience:</span> Field Sales Agents (18+)</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#intro">Overview</a></li>
+        <li><a href="#s1">Scope</a></li>
+        <li><a href="#s2">Data Collected</a></li>
+        <li><a href="#s3">How We Use It</a></li>
+        <li><a href="#s4">Storage & Security</a></li>
+        <li><a href="#s5">Data Sharing</a></li>
+        <li><a href="#s6">Permissions</a></li>
+        <li><a href="#s7">Retention</a></li>
+        <li><a href="#s8">Your Rights</a></li>
+        <li><a href="#s9">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="intro-box" id="intro">
+        <strong>Summary:</strong> SV eCAF is an internal business app
+        exclusively for authorised field sales agents of SV Infonet Solution
+        Private Limited. All data collected is used solely for processing
+        customer application forms and is stored on the Company's private,
+        encrypted backend. We do not sell or share your data with third parties.
+      </div>
+
+      <!-- 1 -->
+      <div class="section" id="s1">
+        <div class="section-header">
+          <div class="section-num">1</div>
+          <h2>Introduction & Scope</h2>
+        </div>
+        <p>
+          SV Infonet Solution Private Limited ("<strong>Company</strong>", "we",
+          "us", or "our") operates the <strong>SV eCAF</strong> mobile
+          application ("<strong>App</strong>"). This Privacy Policy explains how
+          we collect, use, disclose, and protect information when our authorised
+          field sales agents ("<strong>Users</strong>") use the App.
+        </p>
+        <p>
+          This App is strictly for <strong>internal business use</strong> by
+          employees and authorised agents of SV Infonet Solution Private
+          Limited. It is not available to the general public. Access requires
+          valid company-issued credentials.
+        </p>
+        <div class="callout">
+          <div class="callout-icon">🔒</div>
+          <div class="callout-body">
+            <strong>By using the App, you agree to this Privacy Policy.</strong>
+            If you do not agree, please discontinue use and contact your manager
+            to surrender access.
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="section" id="s2">
+        <div class="section-header">
+          <div class="section-num">2</div>
+          <h2>Information We Collect</h2>
+        </div>
+
+        <p><strong>2.1 Information about the Agent (App User)</strong></p>
+        <ul>
+          <li>
+            Agent login credentials (username / employee ID) — for
+            authentication only
+          </li>
+          <li>
+            Device information (model, OS version) — for troubleshooting and
+            compatibility
+          </li>
+        </ul>
+
+        <p>
+          <strong
+            >2.2 Customer Information (collected on behalf of the
+            Company)</strong
+          >
+        </p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Customer name, address, contact number</td>
+              <td>CAF form details for service provisioning</td>
+            </tr>
+            <tr>
+              <td>Identity details (as on CAF)</td>
+              <td>KYC compliance for telecom/ISP regulations</td>
+            </tr>
+            <tr>
+              <td>Photographs of ID & address proof</td>
+              <td>Document verification for customer onboarding</td>
+            </tr>
+            <tr>
+              <td>Customer digital signature</td>
+              <td>Customer consent record on CAF</td>
+            </tr>
+            <tr>
+              <td>Service plan / connection details</td>
+              <td>Processing the customer's service request</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 3 -->
+      <div class="section" id="s3">
+        <div class="section-header">
+          <div class="section-num">3</div>
+          <h2>How We Use the Information</h2>
+        </div>
+        <ul>
+          <li>To verify agent identity and grant authorised App access</li>
+          <li>
+            To process and store Customer Application Forms on behalf of SV
+            Infonet
+          </li>
+          <li>
+            To generate PDF documents of completed CAF forms for official
+            records
+          </li>
+          <li>
+            To transmit completed forms to the Company's internal backend system
+          </li>
+          <li>
+            To comply with regulatory requirements for telecom/ISP service
+            providers
+          </li>
+          <li>
+            To improve App functionality and troubleshoot technical issues
+          </li>
+        </ul>
+      </div>
+
+      <!-- 4 -->
+      <div class="section" id="s4">
+        <div class="section-header">
+          <div class="section-num">4</div>
+          <h2>Data Storage & Security</h2>
+        </div>
+        <p>
+          All data collected through the App is stored on SV Infonet's
+          <strong>private Supabase database</strong> hosted on secure, encrypted
+          cloud infrastructure. Data is transmitted over
+          <strong>HTTPS/TLS</strong> encrypted connections.
+        </p>
+        <div class="callout">
+          <div class="callout-icon">🛡️</div>
+          <div class="callout-body">
+            <strong>Security measures include:</strong>
+            Encryption in transit (TLS) and at rest, strict access controls
+            limited to authorised Company personnel, regular security audits,
+            and no public access to the backend.
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="section" id="s5">
+        <div class="section-header">
+          <div class="section-num">5</div>
+          <h2>Data Sharing & Disclosure</h2>
+        </div>
+        <p>
+          We <strong>do not sell, trade, or rent</strong> any information to
+          third parties. Data may be shared only in the following limited
+          circumstances:
+        </p>
+        <ul>
+          <li>
+            <strong>Internal Company departments</strong> — for processing
+            customer service applications
+          </li>
+          <li>
+            <strong>Regulatory authorities</strong> — when required by law,
+            court order, or government directive
+          </li>
+          <li>
+            <strong>Infrastructure providers</strong> — Supabase (our backend
+            host), bound by strict confidentiality agreements and data
+            processing terms
+          </li>
+        </ul>
+      </div>
+
+      <!-- 6 -->
+      <div class="section" id="s6">
+        <div class="section-header">
+          <div class="section-num">6</div>
+          <h2>App Permissions</h2>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Why It's Needed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>📷 Camera</td>
+              <td>
+                To photograph customer ID and address proof documents in the
+                field
+              </td>
+            </tr>
+            <tr>
+              <td>📁 Storage / File Access</td>
+              <td>To save and export generated PDF forms on the device</td>
+            </tr>
+            <tr>
+              <td>🌐 Internet</td>
+              <td>
+                To submit completed forms to the Company backend and for agent
+                authentication
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 7 -->
+      <div class="section" id="s7">
+        <div class="section-header">
+          <div class="section-num">7</div>
+          <h2>Data Retention</h2>
+        </div>
+        <p>
+          Customer application data is retained for as long as required to
+          fulfil the purpose of service provisioning and to comply with legal,
+          regulatory, or contractual obligations applicable to telecom/ISP
+          operators in India.
+        </p>
+        <p>
+          Agent login data is retained for the duration of the agent's
+          employment or engagement with the Company and deleted promptly upon
+          termination.
+        </p>
+      </div>
+
+      <!-- 8 -->
+      <div class="section" id="s8">
+        <div class="section-header">
+          <div class="section-num">8</div>
+          <h2>Children's Privacy & Your Rights</h2>
+        </div>
+        <p>
+          This App is intended for
+          <strong>adult business users (18+) only</strong>. We do not knowingly
+          collect data from minors.
+        </p>
+        <p>Authorised users may contact us to:</p>
+        <ul>
+          <li>Request access to personal data held about them</li>
+          <li>Request correction of inaccurate personal data</li>
+          <li>
+            Request deletion of personal data (subject to legal retention
+            requirements)
+          </li>
+        </ul>
+      </div>
+
+      <!-- 9 -->
+      <div class="section" id="s9">
+        <div class="section-header">
+          <div class="section-num">9</div>
+          <h2>Changes to This Policy & Contact</h2>
+        </div>
+        <p>
+          We may update this Privacy Policy from time to time. The updated
+          version will be effective as of the revised date at the top of this
+          page. Continued use of the App constitutes acceptance of the revised
+          policy.
+        </p>
+
+        <div class="contact-card">
+          <h3>Contact Us</h3>
+          <div class="contact-item">
+            <span class="label">Company</span>
+            <span>SV Infonet Solution Private Limited</span>
+          </div>
+          <div class="contact-item">
+            <span class="label">Email</span>
+            <a href="mailto:svinfonetsolution2023@gmail.com"
+              >svinfonetsolution2023@gmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="label">Phone</span>
+            <a href="tel:+918511895559">+91 85118 95559 / +91 85117 95559</a>
+          </div>
+          <div class="contact-item">
+            <span class="label">Website</span>
+            <a href="https://svinfonetsolution.in">svinfonetsolution.in</a>
+          </div>
+          <div class="contact-item">
+            <span class="label">Address</span>
+            <span
+              >SV Infonet Solution Private Limited, First Floor, House No 130,
+              Devka Wadifaliya Bhandarwad, Near Laxmi Mata Temple, Nani Daman,
+              Daman, Dadra And Nagar Haveli And Daman And Diu - 396210</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 24px">
+        <a
+          href="terms.html"
+          style="
+            color: var(--blue);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid;
+          "
+          >View Terms &amp; Conditions →</a
+        >
+      </div>
+
+      <div style="text-align: center">
+        <a href="#" class="back-top">↑ Back to Top</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 SV Infonet Solution Private Limited. All rights reserved.</p>
+      <p style="margin-top: 6px">
+        <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </p>
+    </footer>
+  </body>
+</html>
